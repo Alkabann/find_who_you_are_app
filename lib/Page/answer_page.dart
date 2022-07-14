@@ -1,14 +1,13 @@
-import 'package:find_who_you_are_app/Widget/c_searchbar.dart';
 import 'package:flutter/material.dart';
 
-class QuestionPage extends StatefulWidget {
-  const QuestionPage({Key? key}) : super(key: key);
+class AnswerPage extends StatefulWidget {
+  const AnswerPage({Key? key}) : super(key: key);
 
   @override
-  State<QuestionPage> createState() => _QuestionPageState();
+  State<AnswerPage> createState() => _AnswerPageState();
 }
 
-class _QuestionPageState extends State<QuestionPage> {
+class _AnswerPageState extends State<AnswerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +18,6 @@ class _QuestionPageState extends State<QuestionPage> {
             child: Column(
           children: [
             Text("Quelle est votre question ?"),
-            CustomSearchDelegate(),
           ],
         )));
   }
